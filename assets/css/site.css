@@ -78,7 +78,7 @@ strong { color: var(--ink); font-weight: 600; }
 .nav-links { display: flex; align-items: center; gap: 12px; font-size: 14px; font-weight: 500; }
 .nav-links a { color: var(--ink-2); padding: 12px 8px; }
 .nav-links a:hover, .nav-links a[aria-current] { color: var(--ink); }
-.nav-links .nav-cta { color: var(--ink); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 9px 16px; background: var(--surface); }
+.nav-links .nav-cta { color: var(--ink); border: 1px solid var(--line-2); border-radius: var(--radius); padding: 10px 16px; background: var(--surface); }
 .nav-links .nav-cta:hover { border-color: var(--bronze); }
 .nav-toggle { display: none; background: none; border: 1px solid var(--line-2); border-radius: var(--radius); padding: 8px 14px; font-size: 14px; font-weight: 500; cursor: pointer; min-height: 44px; }
 
@@ -195,6 +195,8 @@ strong { color: var(--ink); font-weight: 600; }
 .layer h3 { font: 500 18px var(--serif); margin: 8px 0 4px; }
 .layer p { font-size: 14.5px; line-height: 1.6; margin: 0; }
 .layer.accent { border-color: var(--bronze); background: var(--bronze-soft); }
+.layer.accent .tag { color: var(--bronze-deep); }
+.layer.accent p { color: #57564F; }
 .side { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 12px; }
 .side .layer::before { display: none; }
 .arch-points { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line-2); }
@@ -324,7 +326,7 @@ dialog.lightbox { padding: 0; border: 1px solid var(--line-2); border-radius: va
 dialog.lightbox::backdrop { background: rgba(36, 37, 34, 0.72); }
 dialog.lightbox img { width: 100%; }
 .lb-bar { position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-2); }
-.lb-close { background: none; border: 1px solid var(--line-2); border-radius: var(--radius); padding: 8px 14px; min-height: 40px; cursor: pointer; font-size: 13px; font-weight: 500; }
+.lb-close { background: none; border: 1px solid var(--line-2); border-radius: var(--radius); padding: 8px 14px; min-height: 44px; cursor: pointer; font-size: 13px; font-weight: 500; }
 .lb-close:hover { border-color: var(--bronze); }
 
 /* Lightbox on phones: show screenshots large enough to read, pan sideways */
