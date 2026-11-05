@@ -96,7 +96,7 @@ strong { color: var(--ink); font-weight: 600; }
   color: var(--ink-2); border: 1px solid var(--line-2); border-radius: 3px; padding: 6px 8px;
 }
 .badge.live, .status.live, .live-pill { color: var(--bronze-ink); border-color: var(--bronze); background: var(--bronze-soft); }
-.tags, .chips, .skill-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.tags, .chips, .skill-list { display: flex; flex-wrap: wrap; align-content: flex-start; align-items: flex-start; gap: 8px; }
 .tag, .chip { font: 500 13px/1 var(--sans); color: var(--ink-2); background: var(--bg); border: 1px solid var(--line); border-radius: 3px; padding: 7px 10px; }
 .live-pill {
   display: inline-flex; align-items: center; gap: 9px; padding: 7px 12px; border: 1px solid var(--bronze); border-radius: 999px;
@@ -272,7 +272,13 @@ strong { color: var(--ink); font-weight: 600; }
 .timeline-item h3 { font-size: 23px; margin: 0 0 4px; }
 .timeline-item .where { font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 10px; }
 .timeline-item p { font-size: 15.5px; line-height: 1.7; margin: 0; max-width: var(--measure); }
-.explore { margin-top: 40px; padding: 30px; }
+.learn-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 40px; }
+.learn-grid .card { padding: 26px; }
+.learn-grid h3 { font-size: 22px; margin: 0 0 8px; }
+.learn-grid p { font-size: 15.5px; line-height: 1.7; margin: 0; }
+.focus-strip { list-style: none; margin-block: 0; padding: 18px 0; display: flex; flex-wrap: wrap; gap: 8px 32px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 14px; color: var(--ink-2); }
+.focus-strip li::before { content: ""; display: inline-block; width: 5px; height: 5px; margin-right: 10px; border-radius: 50%; background: var(--bronze); vertical-align: middle; }
+.explore { margin-top: 16px; padding: 30px; }
 .explore h3 { font-size: 26px; margin: 12px 0 10px; }
 .explore p { font-size: 15.5px; line-height: 1.7; max-width: var(--measure); }
 .services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
@@ -353,6 +359,7 @@ dialog.lightbox img { width: 100%; }
   .contact-actions { max-width: 360px; }
   .timeline-item { grid-template-columns: 1fr; gap: 6px; }
   .work-links .muted { margin-left: 0; width: 100%; }
+  .learn-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {
   .stack-grid, .figures, .flow, .flow.four { grid-template-columns: 1fr; }
