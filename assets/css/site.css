@@ -3,6 +3,12 @@
    Tokens -> base -> layout -> components -> case-study modules -> responsive
    ========================================================================== */
 
+/* Self-hosted fonts (SIL Open Font License): Inter and Newsreader, latin subset, variable */
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("../fonts/inter-latin-var.woff2") format("woff2"); }
+@font-face { font-family: "Newsreader"; font-style: normal; font-weight: 200 800; font-display: swap; src: url("../fonts/newsreader-latin-var.woff2") format("woff2"); }
+/* Metric-matched fallback so text does not jump when Inter loads */
+@font-face { font-family: "Inter Fallback"; src: local("Arial"); size-adjust: 107.12%; ascent-override: 90.49%; descent-override: 22.56%; line-gap-override: 0%; }
+
 :root {
   /* Colour */
   --bg: #F5F2EC;            /* warm ivory page background */
@@ -19,7 +25,7 @@
 
   /* Type */
   --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --sans: "Inter", "Inter Fallback", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* Layout */
   --w: 1120px;
@@ -319,6 +325,13 @@ dialog.lightbox img { width: 100%; }
 .lb-bar { position: sticky; top: 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--line); font-size: 13px; color: var(--ink-2); }
 .lb-close { background: none; border: 1px solid var(--line-2); border-radius: var(--radius); padding: 8px 14px; min-height: 40px; cursor: pointer; font-size: 13px; font-weight: 500; }
 .lb-close:hover { border-color: var(--bronze); }
+
+/* Lightbox on phones: show screenshots large enough to read, pan sideways */
+@media (max-width: 760px) {
+  dialog.lightbox img { width: auto; min-width: 920px; max-width: none; }
+  .lb-bar::after { content: "Scroll to pan"; font-size: 12px; color: var(--ink-2); }
+  .lb-bar { gap: 8px; flex-wrap: wrap; left: 0; }
+}
 
 /* Motion ---------------------------------------------------------------- */
 .reveal { animation: rise .6s ease-out both; }
