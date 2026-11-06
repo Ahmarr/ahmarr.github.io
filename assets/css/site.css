@@ -296,11 +296,12 @@ strong { color: var(--ink); font-weight: 600; }
 .explore { margin-top: 16px; padding: 30px; }
 .explore h3 { font-size: 26px; margin: 12px 0 10px; }
 .explore p { font-size: 15.5px; line-height: 1.7; max-width: var(--measure); }
-.services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.service { padding: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+.services { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.service { display: flex; flex-direction: column; padding: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
 .service h3 { font-size: 23px; margin: 0 0 10px; }
 .service p { font-size: 15.5px; line-height: 1.7; margin: 0; }
-.service .link { display: inline-block; margin-top: 14px; font-size: 15px; }
+.service p:not(:last-child) { margin-bottom: 14px; }
+.service .link { align-self: flex-start; margin-top: auto; font-size: 15px; }
 .about-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(36px, 6vw, 88px); }
 .about-title { font: 400 clamp(28px, 3.6vw, 40px)/1.2 var(--serif); letter-spacing: -0.015em; margin-top: 18px; color: var(--ink); }
 
@@ -345,6 +346,9 @@ dialog.lightbox img { width: 100%; }
 }
 
 /* Responsive ------------------------------------------------------------ */
+@media (max-width: 1100px) {
+  .services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 @media (max-width: 960px) {
   .cap-grid, .stack-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .flow, .flow.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
