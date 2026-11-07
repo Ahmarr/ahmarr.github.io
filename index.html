@@ -1,235 +1,300 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#F5F2EC">
-  <title>Ahmar Ali Khan — Web Developer</title>
-  <meta name="description" content="Ahmar Ali Khan — web developer in Mumbai building responsive websites, e-commerce experiences and practical digital solutions for businesses.">
-  <link rel="canonical" href="https://ahmarr.github.io/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Ahmar Ali Khan">
-  <meta property="og:url" content="https://ahmarr.github.io/">
-  <meta property="og:title" content="Ahmar Ali Khan | Web Developer">
-  <meta property="og:description" content="Thoughtful design. Practical development. Digital experiences built for business.">
-  <meta property="og:image" content="https://ahmarr.github.io/assets/og/home-og-1200x630.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Ahmar Ali Khan, web developer in Mumbai, on a warm ivory background.">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ahmar Ali Khan | Web Developer">
-  <meta name="twitter:description" content="Thoughtful design. Practical development. Digital experiences built for business.">
-  <meta name="twitter:image" content="https://ahmarr.github.io/assets/og/home-og-1200x630.jpg">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ahmar Ali Khan","jobTitle":"Web Developer","url":"https://ahmarr.github.io/","sameAs":["https://github.com/Ahmarr"],"address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressCountry":"IN"}}</script>
-  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/newsreader-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/site.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FAF8F1">
+<title>Ahmar Ali Khan — Independent Developer &amp; Digital Creator</title>
+<meta name="description" content="Ahmar Ali Khan, an independent developer and digital creator in Mumbai, building websites and web apps.">
+<link rel="canonical" href="https://ahmarr.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ahmar Ali Khan">
+<meta property="og:url" content="https://ahmarr.github.io/">
+<meta property="og:title" content="Ahmar Ali Khan | Independent Developer &amp; Digital Creator">
+<meta property="og:description" content="Websites and web apps, measured twice and built once.">
+<meta property="og:image" content="https://ahmarr.github.io/assets/og/home-og-1200x630.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ahmar Ali Khan, independent developer in Mumbai.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ahmar Ali Khan | Independent Developer &amp; Digital Creator">
+<meta name="twitter:description" content="Websites and web apps, measured twice and built once.">
+<meta name="twitter:image" content="https://ahmarr.github.io/assets/og/home-og-1200x630.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ahmar Ali Khan","jobTitle":"Independent Developer","url":"https://ahmarr.github.io/","sameAs":["https://github.com/Ahmarr"],"address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressCountry":"IN"}}</script>
+<link rel="preload" href="assets/tape/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/tape/tape.css">
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-nav">
-    <div class="wrap nav-inner">
-      <a class="brand" href="#top" aria-label="Ahmar Ali Khan — home">Ahmar Ali Khan</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      <nav class="nav-links" id="nav-links" aria-label="Main">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a class="nav-cta" href="#contact">Get in touch</a>
-      </nav>
-    </div>
-  </header>
+<a class="skip" href="#zero">Skip to content</a>
 
-  <main id="main">
-    <section class="hero" id="top">
-      <span id="home"></span>
-      <div class="wrap hero-grid">
-        <div class="reveal">
-          <div class="eyebrow">Web developer · Mumbai, India</div>
-          <h1>Thoughtful design. Practical development.</h1>
-          <p class="lede">I'm Ahmar Ali Khan — a web developer focused on building thoughtful, responsive digital experiences for businesses. I combine practical development, design thinking and a business-first mindset to turn ideas into useful websites.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#work">View selected work</a>
-            <a class="btn btn-secondary" href="#contact">Get in touch</a>
-          </div>
-          <p class="hero-note">Based in Mumbai, India · Open to project conversations</p>
+<!-- The tape: one blade for the whole page. Marks are the navigation. -->
+<div class="tape" id="tape">
+  <div class="blade" id="blade" aria-hidden="true"><span class="hook"></span></div>
+  <nav class="marks" id="marks" aria-label="Marks on the tape"></nav>
+</div>
+
+<div class="case" id="case" aria-hidden="true">
+  <div class="body">
+    <span class="mouth"></span>
+    <div class="win" id="win"><span><b>00</b><small>0 mm</small></span></div>
+    <div class="brand">AAK</div>
+    <div class="grip"></div>
+  </div>
+  <span class="tag" id="tag"><em>00</em> · Start</span>
+</div>
+
+<main id="main">
+  <!-- 00 · ZERO -->
+  <section class="chapter hero" id="zero" data-mark="00" data-short="Start" data-kind="ink" aria-labelledby="h-zero">
+    <div class="zero"><span class="k">Reading 0 mm</span></div>
+    <h1 id="h-zero"><span class="ln">Ahmar</span> <span class="ln"><span class="hl">Ali Khan</span></span></h1>
+    <p class="dim" aria-label="Independent developer and digital creator, Mumbai"><i></i><span>Independent developer &amp; digital creator · Mumbai</span><i></i></p>
+
+    <div class="hero-grid">
+      <div>
+        <p class="intro">I build websites and web apps. This page is a tape measure: scroll and it pulls out. Every coral mark is a stop.</p>
+        <p class="note hero-note">measure twice, build once.</p>
+        <p class="scrollcue k">Scroll to pull ↓</p>
+      </div>
+      <table class="cutlist">
+        <caption>On this tape</caption>
+        <tbody id="cutlist"><tr><th scope="row">01</th><td><a href="#work">Selected Work<span class="s">· Completed</span></a></td><td class="mm" data-mm="work">— mm</td></tr><tr><th scope="row">02</th><td><a href="#building">Currently building<span class="s">· In development</span></a></td><td class="mm" data-mm="building">— mm</td></tr><tr><th scope="row">03</th><td><a href="#workshop">The Workshop<span class="s">· Tools &amp; method</span></a></td><td class="mm" data-mm="workshop">— mm</td></tr><tr><th scope="row">04</th><td><a href="#about">About Ahmar<span class="s">· Background</span></a></td><td class="mm" data-mm="about">— mm</td></tr><tr><th scope="row">05</th><td><a href="#beyond">Beyond the Build<span class="s">· Personal</span></a></td><td class="mm" data-mm="beyond">— mm</td></tr><tr><th scope="row">06</th><td><a href="#contact">End of the tape<span class="s">· Contact</span></a></td><td class="mm" data-mm="contact">— mm</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 01 · SELECTED WORK (ink) -->
+  <section class="chapter" id="work" data-mark="01" data-short="Selected Work" data-kind="ink" aria-labelledby="h-work">
+    <div class="pull" data-pull><div class="strip"></div><h2 id="h-work"><small>01</small> Selected Work</h2><span class="stamp">Inked · completed</span></div>
+    <div class="measure">
+      <p class="chapter-lede">Two client websites, both live.</p>
+
+      <article class="project" aria-labelledby="p-zr">
+        <div class="shot">
+          <p class="dim"><i></i><span>Home page · live</span><i></i></p>
+          <figure>
+            <img src="assets/zr/zr-home-960.webp" width="960" height="600" loading="lazy" alt="The ZR Designs home page: a full-width photograph of a hand over a face wearing gold earrings and stacked bracelets, the headline Wear your story, and two buttons, Explore the Collection and Create a Custom Piece.">
+            <img class="second" src="assets/zr/zr-products-960.webp" width="960" height="600" loading="lazy" alt="The ZR Designs All Products page with search, category, gender and price filters, a Customizable only checkbox, and a grid of bracelet photographs with prices.">
+          </figure>
+          <figcaption style="margin-top:72px">Screenshots of the live website, captured November 2026. Brand imagery and products belong to ZR Designs.</figcaption>
         </div>
-        <aside class="card glance reveal" aria-labelledby="glance-title">
-          <h2 id="glance-title">At a glance</h2>
+        <div class="spec">
+          <span class="status done">Completed</span>
+          <h3 id="p-zr">ZR Designs</h3>
+          <p>An e-commerce website for custom, made-to-order stainless-steel keychains and pendants.</p>
+          <p><strong>The brief:</strong> one storefront, two jobs. Let customers browse a ready-made range, and invite them to start something personal.</p>
+          <div class="verified">
+            <div><p class="k">On the site</p>
+              <ul class="ticks"><li>Product catalogue and individual product pages</li><li>Custom-order page for personal pieces</li><li>SEO groundwork: sitemap, robots, structured data, social previews</li></ul></div>
+            <div><p class="k">Behind it</p>
+              <ul class="ticks"><li>Admin dashboard for products, orders, custom orders and coupons</li><li>Supabase for accounts, data and customer uploads, with row-level security</li><li>Razorpay checkout with server-side payment verification</li></ul></div>
+          </div>
           <dl>
-            <dt>Focus</dt><dd>Web development, e-commerce and SEO fundamentals</dd>
-            <dt>Background</dt><dd>Business and marketing</dd>
-            <dt>Based in</dt><dd>Mumbai, India</dd>
+            <div><dt>Type</dt><dd>Client project · e-commerce</dd></div>
+            <div><dt>Stack</dt><dd>Next.js · Supabase · Razorpay</dd></div>
+            <div><dt>Credit</dt><dd>Design and development</dd></div>
+            <div><dt>Live</dt><dd><a href="https://zrdesigns.in" target="_blank" rel="noopener">zrdesigns.in ↗<span class="sr-only"> (opens in a new tab)</span></a></dd></div>
           </dl>
-        </aside>
-      </div>
-    </section>
+          <a class="case-link" href="zr-designs.html">Read the case study →</a>
+        </div>
+      </article>
 
-    <ul class="wrap focus-strip" aria-label="Areas of focus">
-      <li>Responsive websites</li><li>E-commerce</li><li>Modern web tools</li><li>SEO fundamentals</li><li>Business-focused thinking</li>
-    </ul>
-
-    <section class="section" id="work" aria-labelledby="work-title">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="eyebrow">Selected projects</div><h2 id="work-title">Work in the real world.</h2></div>
-          <p>A growing portfolio built around real business needs, customer experience and practical digital solutions.</p>
+      <article class="project flip" aria-labelledby="p-decor">
+        <div class="shot">
+          <p class="dim"><i></i><span>Home page · live</span><i></i></p>
+          <figure>
+            <img src="assets/decor/decor-home-960.webp" width="960" height="600" loading="lazy" alt="The Decor Furnishing home page: a photograph of a hallway with sheer curtains, a brass chandelier and a patterned timber ceiling behind the headline Furniture, room by room.">
+          </figure>
+          <figcaption>Screenshot of the live website, captured November 2026. Photography and brand content belong to Decor Furnishing &amp; Mattresses.</figcaption>
         </div>
-
-        <article class="work-feature">
-          <a class="work-media" href="crm-sales-system.html" tabindex="-1" aria-hidden="true">
-            <img src="assets/crm/crm-dashboard-960.webp" srcset="assets/crm/crm-dashboard-960.webp 960w, assets/crm/crm-dashboard-1600.webp 1600w" sizes="(max-width: 960px) 100vw, 640px" width="960" height="641" loading="lazy" decoding="async" alt="">
-          </a>
-          <div class="work-body">
-            <div class="work-top"><span class="work-kind">Featured · Full-stack web app</span><span class="badge live">Live demo</span></div>
-            <h3>CRM &amp; Sales Management System</h3>
-            <p>A full-stack, multi-tenant CRM and sales management system: leads and one-step lead conversion, a configurable deal pipeline, tasks, activity history and role-based team access. Designed, built and deployed end to end as a portfolio project, with tenant isolation and server-side authorization throughout. Explore it in a read-only demo with fictional data.</p>
-            <div class="tags"><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">Prisma</span><span class="tag">Better Auth</span><span class="tag">Tailwind CSS</span><span class="tag">Vercel</span></div>
-            <div class="work-links"><a class="link" href="crm-sales-system.html" aria-label="View case study: CRM &amp; Sales Management System">View case study</a><a class="link" href="https://crm-sales-system.vercel.app/demo" target="_blank" rel="noopener noreferrer" aria-label="Explore the CRM interactive demo (opens in a new tab)">Explore interactive demo ↗</a></div>
-          </div>
-        </article>
-
-        <div class="work-pair">
-          <article class="work-card">
-            <a class="work-media" href="zr-designs.html" tabindex="-1" aria-hidden="true">
-              <img src="assets/zr/zr-home-960.webp" width="960" height="600" loading="lazy" decoding="async" alt="">
-            </a>
-            <div class="work-body">
-              <div class="work-top"><span class="work-kind">01 · E-commerce</span><span class="badge live">Live website</span></div>
-              <h3>ZR Designs</h3>
-              <p>A custom-products e-commerce experience for a brand creating personalised stainless-steel pendants and keychains. The website brings product discovery and custom-order intent into a cohesive storefront.</p>
-              <div class="tags"><span class="tag">E-commerce</span><span class="tag">Product pages</span></div>
-              <div class="work-links"><a class="link" href="zr-designs.html" aria-label="View case study: ZR Designs">View case study</a><a class="link" href="https://zrdesigns.in/" target="_blank" rel="noopener noreferrer" aria-label="Visit the ZR Designs website (opens in a new tab)">Visit live website ↗</a><span class="muted">Client project</span></div>
-            </div>
-          </article>
-
-          <article class="work-card">
-            <a class="work-media" href="decor-furnishing.html" tabindex="-1" aria-hidden="true">
-              <img src="assets/decor/decor-home-960.webp" width="960" height="600" loading="lazy" decoding="async" alt="">
-            </a>
-            <div class="work-body">
-              <div class="work-top"><span class="work-kind">02 · Business website</span><span class="badge live">Live website</span></div>
-              <h3>Decor Furnishing</h3>
-              <p>A website for a furniture and mattress showroom in Goregaon West, Mumbai, presenting its catalogue of pieces and spaces, photographed where they were installed, along with showroom details and enquiries.</p>
-              <div class="tags"><span class="tag">Website development</span><span class="tag">Brand presentation</span><span class="tag">User experience</span></div>
-              <div class="work-links"><a class="link" href="decor-furnishing.html" aria-label="View case study: Decor Furnishing">View case study</a><a class="link" href="https://decorfurnishing.in" target="_blank" rel="noopener noreferrer" aria-label="Visit the Decor Furnishing website (opens in a new tab)">Visit live website ↗</a><span class="muted">Client project</span></div>
-            </div>
-          </article>
+        <div class="spec">
+          <span class="status done">Completed</span>
+          <h3 id="p-decor">Decor Furnishing</h3>
+          <p>A website for a furniture and mattress showroom in Goregaon West, Mumbai.</p>
+          <p><strong>The brief:</strong> show furniture where it actually lives. Pieces are photographed in the rooms where they were installed, not staged.</p>
+          <ul class="ticks">
+            <li>Collections: living, bedrooms, curtains and blinds.</li>
+            <li>A catalogue of individual pieces, plus real spaces.</li>
+            <li>Showroom details and an enquiry page.</li>
+          </ul>
+          <dl>
+            <div><dt>Type</dt><dd>Client project · business website</dd></div>
+            <div><dt>Credit</dt><dd>Design and development</dd></div>
+            <div><dt>Live</dt><dd><a href="https://decorfurnishing.in" target="_blank" rel="noopener">decorfurnishing.in ↗<span class="sr-only"> (opens in a new tab)</span></a></dd></div>
+          </dl>
+          <a class="case-link" href="decor-furnishing.html">Read the case study →</a>
         </div>
-        <p class="notice">The CRM screenshot is a real capture of the application in a demo sandbox with fictional data. The ZR Designs and Decor Furnishing images are screenshots of the live websites, captured in November 2026.</p>
-      </div>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="wrap about-grid">
-        <div>
-          <div class="eyebrow">About</div>
-          <h2 class="about-title" id="about-title">More than a website. A solution to a real need.</h2>
-        </div>
-        <div class="prose">
-          <p>My background is in business and marketing, and that shapes how I approach development. I care about how a website looks, but also how clearly it communicates, how it works on a phone, and how it supports the business behind it.</p>
-          <p>I've worked on live website projects and explored broader application development through hands-on technical projects. My workflow combines code editors, version control, browser testing and AI-assisted development — with a focus on understanding, reviewing and improving what gets built.</p>
-          <p>I'm continuing to deepen my technical skills through practical work, learning by building and solving real problems one step at a time.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="eyebrow">Skills &amp; toolkit</div><h2 id="skills-title">The tools behind the work.</h2></div>
-          <p>A practical toolkit that continues to grow through projects, testing and structured learning.</p>
-        </div>
-        <div class="cap-rows">
-          <div class="cap-row"><div><h3>Web development</h3><p>Building and improving web interfaces with attention to structure, responsive layouts and usability.</p></div><div class="skill-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Responsive design</span><span class="tag">React exposure</span><span class="tag">Next.js project work</span></div></div>
-          <div class="cap-row"><div><h3>UI &amp; styling</h3><p>Turning business requirements into clear page structures, consistent visual systems and mobile-friendly layouts.</p></div><div class="skill-list"><span class="tag">Tailwind CSS</span><span class="tag">Component-based UI</span><span class="tag">Landing pages</span><span class="tag">Product pages</span></div></div>
-          <div class="cap-row"><div><h3>Application fundamentals</h3><p>Hands-on project exposure to application data, APIs, authentication and common web integrations.</p></div><div class="skill-list"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST APIs</span><span class="tag">MongoDB</span><span class="tag">JWT</span><span class="tag">Supabase</span><span class="tag">Payment integration exposure</span></div></div>
-          <div class="cap-row"><div><h3>Tools &amp; workflow</h3><p>Using modern development tools to edit, review, version, debug and publish web projects.</p></div><div class="skill-list"><span class="tag">VS Code</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Terminal</span><span class="tag">Claude Code</span><span class="tag">Browser DevTools</span><span class="tag">GitHub Pages</span></div></div>
-          <div class="cap-row"><div><h3>SEO &amp; digital marketing</h3><p>Combining website work with content awareness, on-page SEO fundamentals and performance-oriented thinking.</p></div><div class="skill-list"><span class="tag">Meta tags</span><span class="tag">On-page SEO</span><span class="tag">SEO copywriting</span><span class="tag">Product descriptions</span><span class="tag">Instagram Insights</span></div></div>
-          <div class="cap-row"><div><h3>Practical delivery</h3><p>Working through requirements, responsive checks, debugging, deployment setup and iterative improvements.</p></div><div class="skill-list"><span class="tag">Debugging</span><span class="tag">Mobile testing</span><span class="tag">Domain &amp; hosting setup</span><span class="tag">Website maintenance</span><span class="tag">Client coordination</span></div></div>
-        </div>
-        <p class="notice">This list mixes tools I use hands-on with technologies I have project exposure to. It does not imply equal depth in every one.</p>
-      </div>
-    </section>
-
-    <section class="section" id="experience" aria-labelledby="experience-title">
-      <span id="journey"></span>
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="eyebrow">Experience &amp; education</div><h2 id="experience-title">Business thinking. Builder mindset.</h2></div>
-          <p>My path brings together business education, customer-facing experience, digital marketing and practical web development. Each part helps me think about the people using the products I build.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">2025 — Now</div>
-            <div><h3>Web development &amp; personal projects</h3><div class="where">Practical project work</div><p>Building and improving websites, exploring modern development workflows and expanding technical knowledge through project-based learning.</p></div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Nov 2025 — Feb 2026</div>
-            <div><h3>Operations Customer Expert</h3><div class="where">J.P. Morgan Chase &amp; Co. · via Teleperformance</div><p>Handled customer queries across calls, chats and emails, with attention to accuracy, service quality and data-security requirements.</p></div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">Feb — Apr 2025</div>
-            <div><h3>Digital Marketing Intern</h3><div class="where">Light &amp; Light · Mumbai</div><p>Worked on Instagram content planning, captions, product descriptions, hashtags and reviewing Insights to support organic content performance.</p></div>
-          </article>
-          <article class="timeline-item">
-            <div class="timeline-date">2022 — 2025</div>
-            <div><h3>Bachelor of Management Studies</h3><div class="where">Wilson College · Mumbai</div><p>Developed a foundation in business and marketing that informs my approach to websites, customer experience and digital communication.</p></div>
-          </article>
-        </div>
-        <div class="learn-grid">
-          <div class="card"><h3>Business perspective</h3><p>Understanding customer needs, communication, positioning and the goals behind a website.</p></div>
-          <div class="card"><h3>Learning by building</h3><p>Growing technical confidence through real websites, hands-on experiments and ongoing application projects.</p></div>
-        </div>
-        <div class="card explore">
-          <div class="eyebrow">Currently exploring</div>
-          <h3>Full-stack product development</h3>
-          <p>I'm also exploring larger SaaS-style applications, including CRM and project-management workflows, role-based access concepts, database-backed features and structured development practices. These are learning and development projects, not represented as completed commercial products.</p>
-          <p><a class="link" href="crm-sales-system.html">Read the CRM case study</a></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="services" aria-labelledby="services-title">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="eyebrow">How I can help</div><h2 id="services-title">Let's build something useful.</h2></div>
-          <p>Practical website services for businesses that need a clear, credible online presence.</p>
-        </div>
-        <div class="services">
-          <article class="service"><h3>Business websites</h3><p>Responsive websites and landing pages that communicate your services clearly and help customers take the next step.</p></article>
-          <article class="service"><h3>E-commerce experiences</h3><p>Product-focused storefronts and customer journeys, with attention to mobile usability and the buying experience.</p></article>
-          <article class="service"><h3>Website &amp; SEO improvements</h3><p>Website updates, page structure, basic on-page SEO and content improvements that support a stronger online presence.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="wrap">
-        <div class="contact-panel">
-          <div>
-            <div class="eyebrow">Have a project in mind?</div>
-            <h2 id="contact-title">Let's turn your idea into something real.</h2>
-            <p>Whether you're starting a new website, improving an existing one or exploring an e-commerce idea, I'd be glad to hear what you're working on.</p>
-          </div>
-          <div class="contact-actions">
-            <a class="btn btn-primary" href="https://wa.me/918299823611" target="_blank" rel="noopener noreferrer">Chat on WhatsApp <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
-            <a class="btn btn-secondary" href="mailto:khanahmarr@gmail.com">Send me an email</a>
-            <a class="btn btn-secondary" href="https://github.com/Ahmarr" target="_blank" rel="noopener noreferrer">Explore my GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer-inner">
-      <div><a class="brand" href="#top">Ahmar Ali Khan</a><div class="footer-copy">Web developer · Mumbai, India</div></div>
-      <div>© <span id="year">2026</span> Ahmar Ali Khan</div>
-      <a class="back-top" href="#top">Back to top ↑</a>
+      </article>
     </div>
-  </footer>
-  <script src="assets/js/site.js" defer></script>
+  </section>
+
+  <!-- 02 · CURRENTLY BUILDING (pencil) -->
+  <section class="chapter pencil-zone" id="building" data-mark="02" data-short="Building" data-kind="pencil" aria-labelledby="h-building">
+    <div class="pull pencil" data-pull><div class="strip"></div><h2 id="h-building">currently building</h2><span class="stamp">Pencilled · in development</span></div>
+    <div class="measure">
+      <p class="chapter-lede">Work in progress. It stays in pencil until it's finished.</p>
+
+      <article class="project" aria-labelledby="p-crm">
+        <div class="shot">
+          <p class="dim pencil"><i></i><span>Real screens · demo sandbox, fictional data</span><i></i></p>
+          <figure>
+            <img src="assets/crm/crm-pipeline-960.webp" width="960" height="742" loading="lazy" alt="CRM deals board with Qualified, Proposal, Won and Lost columns, each showing its probability and per-currency totals, above a list of open tasks.">
+            <img class="phone" src="assets/crm/crm-mobile-deals-600.webp" width="600" height="1298" loading="lazy" alt="The CRM deals page on a phone-sized screen.">
+          </figure>
+          <figcaption style="margin-top:78px">Real screenshots of the application, taken in a demo sandbox with fictional companies and people. No customer data is shown.</figcaption>
+        </div>
+        <div class="spec">
+          <span class="status wip">In development</span>
+          <h3 id="p-crm">CRM &amp; Sales Management System</h3>
+          <p>A multi-tenant CRM for small sales teams: capture leads, move deals through their own pipeline and keep follow-ups on track.</p>
+          <ul class="ticks">
+            <li>Every record belongs to an organization, and each organization's data is isolated.</li>
+            <li>Five roles, Owner to Viewer, checked on the server for every read and write.</li>
+            <li>Tests try other organizations' record IDs and expect refusal.</li>
+          </ul>
+          <dl>
+            <div><dt>Role</dt><dd>Product design, full-stack development, deployment</dd></div>
+            <div><dt>Stack</dt><dd>Next.js · TypeScript · PostgreSQL · Prisma</dd></div>
+          </dl>
+          <a class="case-link" href="crm-sales-system.html">Read the case study →</a>
+          <a class="demo" href="https://crm-sales-system.vercel.app/demo" target="_blank" rel="noopener">Open the read-only demo ↗<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </article>
+      <ol class="journey" aria-label="CRM development so far">
+        <li><b>Oct 2026</b>Started building</li>
+        <li><b>Nov 2026</b>Public read-only demo went live</li>
+        <li class="now"><b>Now</b>In active development</li>
+      </ol>
+
+      <article class="project flip" aria-labelledby="p-pm">
+        <div class="shot">
+          <div class="blank"><p class="note">no screens yet.<br>nothing staged.</p></div>
+        </div>
+        <div class="spec">
+          <span class="status wip">In development</span>
+          <h3 id="p-pm">Project Management SaaS</h3>
+          <p>Early stage: the architecture is planned and the project is set up. No product features yet, so there are no screens to show.</p>
+          <dl><div><dt>Stage</dt><dd>Architecture &amp; scaffold</dd></div><div><dt>Stack</dt><dd>Next.js · TypeScript (planned: PostgreSQL via Prisma)</dd></div></dl>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 03 · THE WORKSHOP (masking tape, cutting mat) -->
+  <section class="chapter" id="workshop" data-mark="03" data-short="Workshop" data-kind="ink" aria-labelledby="h-workshop" style="padding-bottom:0">
+    <div class="pull masked" data-pull><div class="strip"></div><h2 id="h-workshop"><small>03</small> The Workshop</h2><span class="stamp">Tools &amp; method</span></div>
+    <div class="mat">
+      <p class="k">On the cutting mat</p>
+      <p class="chapter-lede" style="margin-top:8px">The tools on the bench and the way I use them.</p>
+      <ul class="parts" aria-label="Toolbox">
+        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive design</li><li>Tailwind CSS</li><li>Next.js</li><li>React</li><li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>MongoDB</li><li>Supabase</li><li>Git &amp; GitHub</li><li>On-page SEO</li><li>Browser DevTools</li>
+      </ul>
+      <p class="parts-legend">This list mixes tools I use hands-on with technologies I've only had project exposure to. It doesn't imply equal depth in every one.</p>
+      <div class="method">
+        <div><b>Build</b><p>Code editors and Git: every change is tracked.</p></div>
+        <div><b>Check</b><p>Browser testing: how it looks, how clearly it communicates, how it behaves on a phone.</p></div>
+        <div><b>Review</b><p>One rule: I understand, review and improve whatever goes into a project.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · ABOUT -->
+  <section class="chapter" id="about" data-mark="04" data-short="About" data-kind="ink" aria-labelledby="h-about">
+    <div class="pull" data-pull><div class="strip"></div><h2 id="h-about"><small>04</small> About Ahmar</h2><span class="stamp">The distance so far</span></div>
+    <div class="measure">
+      <div class="distance" id="experience" aria-label="The distance so far, 2022 to 2026">
+        <div class="ruler" aria-hidden="true"></div>
+        <div class="years">
+          <div><b>2022</b>Management studies begin</div>
+          <div><b>2025</b>Marketing internship, then web development and personal projects</div>
+          <div><b>2025–26</b>Operations role, J.P. Morgan Chase &amp; Co. via Teleperformance</div>
+          <div><b>2026</b>CRM demo live, still in development</div>
+        </div>
+      </div>
+      <div class="about-body">
+        <p>My background is business and marketing, and it shapes how I build. I care how a site looks, and just as much how clearly it communicates, how it behaves on a phone, and how it supports the business behind it.</p>
+        <div><p>I've worked on live websites and taken on larger application projects to push my skills further.</p><p class="note">still learning, by building.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · BEYOND THE BUILD (back of the tape) -->
+  <section class="chapter beyond" id="beyond" data-mark="05" data-short="Beyond" data-kind="pencil" data-back aria-labelledby="h-beyond">
+    <div class="pull back" data-pull><div class="strip"></div><h2 id="h-beyond"><small>05</small> Beyond the Build</h2><span class="stamp">Back of the tape · personal</span></div>
+    <div class="measure">
+      <p class="chapter-lede">Away from client work: football, a few other sports, and gaming.</p>
+
+      <article class="plate p-football" aria-labelledby="pl-football">
+        <header class="plate-head"><h3 id="pl-football">Football</h3></header>
+        <div class="story">
+          <p class="story-line">Represented India in youth football tournaments, including Denmark's Dana Cup and a Sri Lanka tour.</p>
+          <ul class="away" aria-label="Tournaments">
+            <li><span class="k">Tournament</span><b>Dana Cup</b><span>Denmark</span></li>
+            <li><span class="k">Tour</span><b>Sri Lanka</b><span>Youth football</span></li>
+          </ul>
+        </div>
+        <figure class="sheet sheet-pitch">
+          <div class="drawing" data-pull>
+            <svg viewBox="0 0 1250 840" role="img" aria-label="Plan of a football pitch">
+              <g transform="translate(110 120)">
+                <g class="ln">
+                  <rect x="0" y="0" width="1050" height="680"/><line x1="525" y1="0" x2="525" y2="680"/><circle cx="525" cy="340" r="91.5"/>
+                  <rect x="0" y="138.4" width="165" height="403.2"/><rect x="0" y="248.4" width="55" height="183.2"/><path d="M165 266.87 A91.5 91.5 0 0 1 165 413.13"/>
+                  <rect x="885" y="138.4" width="165" height="403.2"/><rect x="995" y="248.4" width="55" height="183.2"/><path d="M885 266.87 A91.5 91.5 0 0 0 885 413.13"/>
+                  <path d="M0 10 A10 10 0 0 0 10 0 M1040 0 A10 10 0 0 0 1050 10 M0 670 A10 10 0 0 1 10 680 M1040 680 A10 10 0 0 1 1050 670"/>
+                </g>
+                <g class="goal"><rect x="-14" y="303.4" width="14" height="73.2"/><rect x="1050" y="303.4" width="14" height="73.2"/></g>
+                <g class="dot"><circle cx="525" cy="340" r="5"/><circle cx="110" cy="340" r="5"/><circle cx="940" cy="340" r="5"/></g>
+              </g>
+              <g class="dimln"><line x1="110" y1="70" x2="1160" y2="70"/><line x1="110" y1="56" x2="110" y2="84"/><line x1="1160" y1="56" x2="1160" y2="84"/></g>
+              <text class="anno" x="635" y="52" text-anchor="middle">touchline · 100–110 m</text>
+              <g class="dimln"><line x1="60" y1="120" x2="60" y2="800"/><line x1="46" y1="120" x2="74" y2="120"/><line x1="46" y1="800" x2="74" y2="800"/></g>
+              <text class="anno" x="0" y="0" transform="translate(40 460) rotate(-90)" text-anchor="middle">goal line · 64–75 m</text>
+            </svg>
+          </div>
+          <figcaption>Pitch sizes vary. For international matches, IFAB Law 1 allows 100–110 × 64–75 m; this one is drawn at 105 × 68 m.</figcaption>
+        </figure>
+      </article>
+
+      <div class="also">
+        <p class="also-line">Other sports I enjoy: <b>pickleball</b>, <b>badminton</b> and <b>volleyball</b>.</p>
+      </div>
+
+      <aside class="gaming-note" aria-labelledby="pl-gaming">
+        <h3 id="pl-gaming">Gaming &amp; esports</h3>
+        <p>Gaming is one of my personal interests. I enjoy watching esports, and now and then I follow what's happening in the gaming community. It's part of the wider mix that shapes my creative perspective.</p>
+      </aside>
+
+      <p class="handoff hand">one more space to measure: the screen you're reading this on ↓</p>
+    </div>
+  </section>
+
+  <!-- 06 · END OF THE TAPE: CONTACT -->
+  <section class="chapter endzone" id="contact" data-mark="06" data-short="Yours" data-kind="ink" aria-labelledby="h-contact">
+    <div class="pull end" data-pull><div class="strip"></div><h2 id="h-contact"><small>06</small> End of the tape</h2><span class="stamp">Contact</span></div>
+    <div class="measure">
+      <p class="k lastm" id="lastm">Last measurement on this tape: your screen, <span class="vpw">—</span> × <span class="vph">—</span> px</p>
+      <p class="big">The next measurement <mark>is yours.</mark></p>
+      <p class="chapter-lede">Tell me what you're building and what it needs to do.</p>
+      <div class="contact" style="margin-top:28px">
+        <a class="primary" href="mailto:khanahmarr@gmail.com">khanahmarr@gmail.com</a>
+        <a href="https://wa.me/918299823611" target="_blank" rel="noopener">WhatsApp ↗<span class="sr-only"> (opens in a new tab)</span></a>
+        <a href="https://github.com/Ahmarr" target="_blank" rel="noopener">GitHub ↗<span class="sr-only"> (opens in a new tab)</span></a>
+      </div>
+      <div class="vpframe" aria-hidden="true"><p class="vp-h"><span><b class="vpw">—</b> px wide<span class="m-only"> · <b class="vph">—</b> px tall</span></span></p><p class="vp-v"><span><b class="vph">—</b> px tall</span></p></div>
+      <div class="foot"><span>Ahmar Ali Khan · Mumbai</span><span id="total">Total length: — mm</span><span>psst: the case has a back door. <span class="hint-key">press <kbd>`</kbd></span><span class="hint-touch">tap it three times.</span></span></div>
+    </div>
+  </section>
+</main>
+
+<!-- Easter egg: a terminal printed out of the case. Information only; it never navigates. -->
+<section class="term" id="term" hidden aria-label="Tape terminal">
+  <header><span>aak@tape:~</span><button type="button" id="termClose" aria-label="Close terminal">esc ✕</button></header>
+  <div class="out" id="termOut" aria-live="polite"></div>
+  <form id="termForm" autocomplete="off"><label for="termIn">$</label><input id="termIn" spellcheck="false" autocapitalize="off" aria-label="Command"></form>
+</section>
+
+<script src="assets/tape/tape.js"></script>
 </body>
 </html>
